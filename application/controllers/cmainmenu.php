@@ -52,5 +52,27 @@ class Cmainmenu extends CI_Controller {
          }
 
     }
+
+    function mainmenuedit(){
+
+
+        $cat_id=$_GET['id'];
+        $data['mainmenubyid'] = $this->mmainmenu->fatchmainmenubyid($cat_id);
+        $data['sessiondata'] = $this->session->userdata('userdata');
+
+        $this->load->view('vdashheader',$data);
+        $this->load->view('vmainmenuedit',$data);
+        $this->load->view('vdashfooter',$data);
+    }
+
+    function updatemainmenu(){
+        $cat_id=$_GET['id'];
+        $data = $_POST;
+        $result = $this->mmainmenu->updatemainmenubyid($cat_id,$data);
+        if($result){
+             $this->session->set_flashdata('MainmenuStatus', 'You have been successfully updated A main menu');
+             redirect(base_url() . 'foodmainmenu');
+         }
+    }
     
 }

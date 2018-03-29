@@ -27,4 +27,19 @@ class Mmainmenu extends CI_Model {
             return $query->result();
 	}
 
+	function fatchmainmenubyid($id){
+		 $this->db->select('*');
+         $this->db->from('tbl_catagory');
+         $this->db->where('category_id',$id);
+         $query = $this->db->get();
+         return $query->result();
+	}
+
+	function updatemainmenubyid($id,$data){
+
+		$this->db->update('tbl_catagory', array('catagory_name' => $data['mainmenufield']), array('category_id' => $id));
+		return true;
+
+	}
+
 }

@@ -49,6 +49,8 @@ $route['userlogout'] = "creguser/logout";
 $route['foodmainmenu'] = "cmainmenu";
 $route['foodmainmenuadd'] = "cmainmenu/mainmenuadd";
 $route['addmainmenu']="cmainmenu/processaddmainmenu";
+$route['editmainmenu']="cmainmenu/mainmenuedit";
+$route['updatemainmenu']="cmainmenu/updatemainmenu";
 
 
 

@@ -57,7 +57,7 @@ class Cmainmenu extends CI_Controller {
 
 
         $cat_id=$_GET['id'];
-        $data['mainmenubyid'] = $this->mmainmenu->fatchmainmenubyid($cat_id);
+        $data['mainmenubyid'] = $this->mmainmenu->fetchmainmenubyid($cat_id);
         $data['sessiondata'] = $this->session->userdata('userdata');
 
         $this->load->view('vdashheader',$data);

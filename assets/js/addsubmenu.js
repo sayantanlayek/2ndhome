@@ -5,17 +5,37 @@
         } );
 
         $( document ).ready( function () {
-            $( "#mainmenuform" ).validate( {
+
+
+            jQuery.validator.addMethod("deccheck", function(value, element) {
+        return this.optional(element) || /^\d{0,4}(\.\d{0,2})?$/i.test(value);
+    }, "You must include two decimal places");
+
+            $( "#submenuform" ).validate( {
                 rules: {
                    
-                    mainmenufield: {
+                    mainmenu: {
                         required: true
+                    },
+                     submenufield: {
+                        required: true
+                    },
+                    submenuprice:{
+                        required: true,
+                        number: true,
+                        deccheck: true
                     }
                 },
                 messages: {
                     
-                    mainmenufield: {
-                        required: "Please provide a Main menu name"
+                    mainmenu: {
+                        required: "Please select mainmenu"
+                    },
+                     submenufield: {
+                        required: "Please provide Sub menu name"
+                    },
+                    submenuprice:{
+                        required: "Please provide Sub menu Price"
                     }
                 },
                 errorElement: "em",

@@ -90,7 +90,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="<?php echo base_url() ?>foodsubmenu">
                         <i class="pe-7s-note2"></i>
                         <p>Food Sub Menu</p>
                     </a>

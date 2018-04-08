@@ -51,6 +51,12 @@ $route['foodmainmenuadd'] = "cmainmenu/mainmenuadd";
 $route['addmainmenu']="cmainmenu/processaddmainmenu";
 $route['editmainmenu']="cmainmenu/mainmenuedit";
 $route['updatemainmenu']="cmainmenu/updatemainmenu";
+$route['foodsubmenu'] = "csubmenu";
+$route['foodsubmenuadd']="csubmenu/submenuadd";
+$route['addsubmenu']="csubmenu/processaddsubmenu";
+$route['editsubmenu']="csubmenu/submenuedit";
+$route['updatesubmenu']="csubmenu/updatesubmenu";
+$route['menu']="cmenustructure";
 
 
 

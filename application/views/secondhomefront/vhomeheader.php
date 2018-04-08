@@ -15,6 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="<?php echo base_url() ?>assets/homeassets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="<?php echo base_url() ?>assets/homeassets/css/slider.css" rel="stylesheet" type="text/css" media="all" />
 	<script src="<?php echo base_url() ?>assets/homeassets/js/jquery.min.js" type="text/javascript"></script>
+	<link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/homeassets/js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/homeassets/js/camera.min.js"></script>
 	<script type="text/javascript">
@@ -26,6 +27,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 </head>
+<style type="text/css">
+	
+	ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+</style>
 
 <body>
 	<div class="header">
@@ -59,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="about.html">About</a>
 						</li>
 						<li>
-							<a href="menu.html">Menu</a>
+							<a href="<?php echo base_url() ?>menu">Menu</a>
 						</li>
 						<li>
 							<a href="services.html">Services</a>

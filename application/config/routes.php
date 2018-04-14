@@ -40,7 +40,7 @@
 
 $route['default_controller'] = "csecondhomemain";
 $route['404_override'] = '';
-$route['adminlogin'] = "cadminlogin";
+$route['login'] = "cadminlogin";
 $route['userregistration'] = "cuserregistration";
 $route['dashboard'] = "cdashboard";
 $route['reguser'] = "creguser/reguser";
@@ -57,6 +57,9 @@ $route['addsubmenu']="csubmenu/processaddsubmenu";
 $route['editsubmenu']="csubmenu/submenuedit";
 $route['updatesubmenu']="csubmenu/updatesubmenu";
 $route['menu']="cmenustructure";
+$route['checkoutpage'] = "ccheckout";
+$route['order'] = "ccheckout/ordermyfood";
+$route['myorder'] = "corder";
 
 
 

@@ -43,13 +43,20 @@ class Creguser extends CI_Controller {
         $data = $_POST;
         $status = $this->mreguser->logincheck($data);
         if ($status =="1") {
+            if($data['cart'] == "" && $data['total'] == ""){
+                 redirect(base_url('dashboard'));
+
+            }else{
+                 redirect(base_url('checkoutpage'));
+
+            }
                        
             
-                redirect(base_url('dashboard'));
+               
            
         } else {
             $this->session->set_flashdata('errorStatus', 'Verification Authentication Failed');
-            redirect(base_url() . 'adminlogin');
+            redirect(base_url() . 'login');
         }
 
     }
@@ -69,7 +76,7 @@ class Creguser extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
 
         //$this->index();
-        redirect(base_url() . 'adminlogin');
+        redirect(base_url());
     }
     
 }

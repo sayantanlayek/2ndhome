@@ -77,26 +77,31 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <?php if($sessiondata['user_name'] =="admin") {?>
                 <li>
                     <a href="">
                         <i class="pe-7s-note2"></i>
                         <p>User List</p>
                     </a>
                 </li>
+
+                <?php } if($sessiondata['user_name'] =="admin") {?>
                 <li>
                     <a href="<?php echo base_url() ?>foodmainmenu">
                         <i class="pe-7s-note2"></i>
                         <p>Food Main Menu</p>
                     </a>
                 </li>
+                <?php } if($sessiondata['user_name'] =="admin") { ?>
                 <li>
                     <a href="<?php echo base_url() ?>foodsubmenu">
                         <i class="pe-7s-note2"></i>
                         <p>Food Sub Menu</p>
                     </a>
                 </li>
+                <?php } ?>
                 <li>
-                    <a href="">
+                    <a href="<?php echo base_url() ?>myorder">
                         <i class="pe-7s-note2"></i>
                         <p>Order List</p>
                     </a>
@@ -107,13 +112,14 @@
                         <p>Table List</p>
                     </a>
                 </li>
-
+                <?php if($sessiondata['user_name'] =="admin") { ?>
                 <li>
                     <a href="">
                         <i class="pe-7s-note2"></i>
                         <p>GST %</p>
                     </a>
                 </li>
+                <?php } ?>
                 
                 <li>
                     <a href="">

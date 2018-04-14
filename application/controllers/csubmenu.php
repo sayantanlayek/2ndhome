@@ -13,7 +13,7 @@ class Csubmenu extends CI_Controller {
         $this->load->model('msubmenu');
         $this->load->model('mmainmenu');
          if(empty($this->session->userdata('userdata'))){
-             redirect(base_url() . 'adminlogin');
+             redirect(base_url() . 'login');
          }
     }
 

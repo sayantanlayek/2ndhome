@@ -13,6 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="<?php echo base_url() ?>assets/homeassets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="<?php echo base_url() ?>assets/homeassets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>

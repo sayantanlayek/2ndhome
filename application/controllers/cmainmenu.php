@@ -13,7 +13,7 @@ class Cmainmenu extends CI_Controller {
         date_default_timezone_set('Asia/Kolkata');
         $this->load->model('mmainmenu');
          if(empty($this->session->userdata('userdata'))){
-             redirect(base_url() . 'adminlogin');
+             redirect(base_url() . 'login');
          }
     }
 

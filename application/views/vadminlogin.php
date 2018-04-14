@@ -22,9 +22,22 @@
                      <a class="btn btn-lg btn-success btn-block" href="<?php echo base_url() ?>userregistration" class="text-center new-account">Create an account </a>
                 
                 <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+
+
+                <input type="hidden" value="" name="cart" id="cart">
+                <input type="hidden" value="" name="total" id="total">
+
+
+
                 </form>
             </div>
         </div>
     </div>
 </div>
 <script src="<?php echo base_url() ?>assets/js/login.js"></script>
+<script type="text/javascript">
+    
+    $('#cart').val(localStorage.cart);
+    $('#total').val(localStorage.total);
+    //localStorage.removeItem(cart);
+</script>

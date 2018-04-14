@@ -30,7 +30,7 @@
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Register me</button>
                 
-                <a href="<?php echo base_url() ?>adminlogin"  class="btn btn-lg btn-warning btn-block text-center new-account">Back to login</a>
+                <a href="<?php echo base_url() ?>login"  class="btn btn-lg btn-warning btn-block text-center new-account">Back to login</a>
                 </form>
             </div>
             

@@ -42,7 +42,7 @@ a.pull-right.btn.btn-denger.myaddbtn {
                                             <td><?php echo $value->catagory_name ?></td>
                                             <td><?php echo $value->sub_category_name ?></td>
                                             <td><?php echo $value->sub_category_desc ?></td>
-                                            <td><?php echo $value->sub_category_price ?></td>
+                                            <td><i class="fa fa-inr" aria-hidden="true"></i><?php echo $value->sub_category_price ?></td>
                                             <td>
                                                 <a href="<?php echo base_url() ?>editsubmenu?id=<?php echo $value->sub_category_id ?>" class="btn btn-primary">Edit</a> <a href="" class="btn btn-denger">Delete</a>
 

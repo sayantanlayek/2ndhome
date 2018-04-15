@@ -60,6 +60,7 @@ $route['menu']="cmenustructure";
 $route['checkoutpage'] = "ccheckout";
 $route['order'] = "ccheckout/ordermyfood";
 $route['myorder'] = "corder";
+$route['detailsorder'] = "corder/detailorderbid";
 
 
 

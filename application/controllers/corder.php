@@ -29,6 +29,19 @@ class Corder extends CI_Controller {
 
 	}
 
+
+    function detailorderbid(){
+
+        $data['o_id'] = $_GET['id'];
+        $data['sessiondata'] = $this->session->userdata('userdata');
+        $data['orderdatabyid'] = $this->morder->detailorderbid($data);
+        $this->load->view('vdashheader',$data);
+         $this->load->view('vorderbyid',$data);
+         $this->load->view('vdashfooter',$data);
+
+
+    }
+
 }
 
 ?>

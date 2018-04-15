@@ -29,6 +29,20 @@ var $db;
 
     	
     }
+     function detailorderbid($data){
+
+
+    	$this->db->select('*');
+         $this->db->from('tbl_order');
+         if($data['sessiondata']['user_role'] != 'admin'){
+         $this->db->where('user_id',$data['sessiondata']['user_id']);
+    	 }
+         $this->db->where('order_id',$data['o_id']);
+         $query = $this->db->get();
+         return $query->result();
+
+    	
+    }
 
     }
 

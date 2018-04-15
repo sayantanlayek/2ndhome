@@ -14,7 +14,7 @@
                                     <thead>
                                         <th>Order Number</th>
                                         <th>Total Expense</th>
-                                        <th>Action</th>
+                                        <th>Delivery Status</th>
                                         <th>Detailed View</th>
                                         
                                     </thead>

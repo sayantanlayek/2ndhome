@@ -78,5 +78,25 @@ class Creguser extends CI_Controller {
         //$this->index();
         redirect(base_url());
     }
+
+
+
+    function userlist(){
+        $data['sessiondata'] = $this->session->userdata('userdata');
+        if($data['sessiondata']['user_role'] == "admin"){
+            $data['userlist'] = $this->mreguser->totaluser($data);
+         }
+         $this->load->view('vdashheader',$data);
+        $this->load->view('vuserlist',$data);
+        $this->load->view('vdashfooter',$data);
+    }
+
+    function userdetailsbyid(){
+        $data['sessiondata'] = $this->session->userdata('userdata');
+            $data['userdetail'] = $this->mreguser->userdetails($data['sessiondata']['user_id']);
+         $this->load->view('vdashheader',$data);
+        $this->load->view('vuserdetails',$data);
+        $this->load->view('vdashfooter',$data);
+    }
     
 }

@@ -53,4 +53,21 @@ class Mreguser extends CI_Model {
         }
 
     }
+
+    function totaluser($data){
+       $this->db->select('*');
+        $this->db->from('tbl_users');
+        $query = $this->db->get();
+         return $query->result();
+
+    }
+    function userdetails($id){
+
+       $this->db->select('*');
+        $this->db->from('tbl_users');
+        $this->db->where('user_id',$id);
+         $query = $this->db->get();
+         return $query->result();
+
+    }
 }

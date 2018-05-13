@@ -42,6 +42,16 @@ class Corder extends CI_Controller {
 
     }
 
+
+    function orderreached(){
+        $id =$_GET['id'];
+     $result = $this->morder->onlineordersuccess($id);
+    if($result){
+             $this->session->set_flashdata('CheckoutStatus', 'Online order Received Successfully');
+             redirect(base_url() . 'myorder');
+         }
+    }
+
 }
 
 ?>

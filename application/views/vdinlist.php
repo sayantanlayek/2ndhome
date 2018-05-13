@@ -2,10 +2,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="header">
-                                <h4 class="title">My order</h4>
-                                <p class="category"><?php if(!empty($this->session->flashdata('CheckoutStatus'))){ ?>
+                                <h4 class="title">Dine orders</h4>
+                                 <a href="<?php echo base_url() ?>dineorder" class="pull-right btn btn-denger myaddbtn">Add New Dine</a>
+                                <p class="category"><?php if(!empty($this->session->flashdata('diineStatus'))){ ?>
                  <div class="successHandler alert alert-success ">
-                        <i class="fa fa-remove-sign"></i> <?php echo $this->session->flashdata('CheckoutStatus'); ?>
+                        <i class="fa fa-remove-sign"></i> <?php echo $this->session->flashdata('diineStatus'); ?>
                     </div> 
                     <?php } ?> </p>
                             </div>
@@ -19,7 +20,7 @@
                                         
                                     </thead>
                                     <tbody>
-                                    <?php foreach ($orderdata as $key => $value) {
+                                    <?php foreach ($dineorderdata as $key => $value) {
 
                                     ?>                                        
                                     <tr>
@@ -31,9 +32,9 @@
                                                
                                             </td>
                                             <td>
-                                            	<a href="<?php echo base_url() ?>detailsorder?id=<?php echo $value->order_id ?>" class="btn btn-primary">Details</a>
-                                                <?php if( $value->order_status == 'Pending'  && $sessiondata['user_name'] =="admin"){ ?>
-                                                <a href="<?php echo base_url() ?>orderreached?id=<?php echo $value->order_id ?>" class="btn btn-danger">Order received</a>
+                                            	<a href="<?php echo base_url() ?>detailsdine?id=<?php echo $value->order_id ?>" class="btn btn-primary">Details</a>
+                                                <?php if( $value->order_status == 'Pending' && $value->user_id == '1'){ ?>
+                                                <a href="<?php echo base_url() ?>dinedone?id=<?php echo $value->order_id ?>" class="btn btn-danger">Dine Done</a>
                                                 <?php } ?>
                                             </td>
                                             
@@ -52,8 +53,8 @@
             </div>
         </div>
         <script type="text/javascript">
-        	localStorage.removeItem('cart');
-        	localStorage.removeItem('total');
+        	localStorage.removeItem('cart1');
+        	localStorage.removeItem('total1');
         </script>
 
 

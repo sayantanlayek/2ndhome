@@ -17,6 +17,9 @@
     <!-- Animation library for notifications   -->
     <link href="<?php echo base_url() ?>assets/css/animate.min.css" rel="stylesheet"/>
 
+<link href="https://cdn.staticfile.org/select2/3.4.1/select2.css" rel="stylesheet"/>
+
+
     <!--  Light Bootstrap Table core CSS    -->
     <link href="<?php echo base_url() ?>assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
@@ -72,14 +75,14 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="">
+                    <a href="<?php echo base_url() ?>dashboard">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <?php if($sessiondata['user_name'] =="admin") {?>
                 <li>
-                    <a href="">
+                    <a href="<?php echo base_url() ?>userlist">
                         <i class="pe-7s-note2"></i>
                         <p>User List</p>
                     </a>
@@ -103,30 +106,26 @@
                 <li>
                     <a href="<?php echo base_url() ?>myorder">
                         <i class="pe-7s-note2"></i>
-                        <p>Order List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
+                        <p>Online Order List</p>
                     </a>
                 </li>
                 <?php if($sessiondata['user_name'] =="admin") { ?>
                 <li>
-                    <a href="">
+                    <a href="<?php echo base_url() ?>foodtablelist">
                         <i class="pe-7s-note2"></i>
-                        <p>GST %</p>
+                        <p>Table List</p>
+                    </a>
+                </li>
+                <?php } ?>
+                <?php if($sessiondata['user_name'] =="admin") { ?>
+                <li>
+                    <a href="<?php echo base_url() ?>dineorderlist">
+                        <i class="pe-7s-note2"></i>
+                        <p>Dine Order List</p>
                     </a>
                 </li>
                 <?php } ?>
                 
-                <li>
-                    <a href="">
-                        <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
 				
             </ul>
     	</div>
@@ -171,7 +170,7 @@
 
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">User Profile</a></li>
+                                <li><a href="<?php echo base_url() ?>userdetails">User Profile</a></li>
                               </ul>
                         </li>
                         <li>

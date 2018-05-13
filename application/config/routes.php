@@ -61,6 +61,21 @@ $route['checkoutpage'] = "ccheckout";
 $route['order'] = "ccheckout/ordermyfood";
 $route['myorder'] = "corder";
 $route['detailsorder'] = "corder/detailorderbid";
+$route['orderreached'] = "corder/orderreached";
+$route['foodtablelist'] = "ctables";
+$route['foodtableadd'] = "ctables/tableadd";
+$route['addfoodtable'] = "ctables/processtableadd";
+$route['edittable'] = "ctables/tableedit";
+$route['updatetable'] = "ctables/updatetable";
+$route['dineorderlist'] = "cdine";
+$route['dineorder'] = "cdine/adddinebytable";
+$route['adddineorder'] = "cdine/addineorder";
+$route['detailsdine'] = "cdine/detailsdinebyid";
+$route['updatedineorder'] = "cdine/updineorderbyid";
+$route['dinedone'] = "cdine/dinedone";
+$route['userlist'] = "creguser/userlist";
+$route['userdetails'] = "creguser/userdetailsbyid";
+
 
 
 

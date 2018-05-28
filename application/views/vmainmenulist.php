@@ -38,7 +38,9 @@ a.pull-right.btn.btn-denger.myaddbtn {
                                             <td><?php echo ($key+1) ?></td>
                                             <td><?php echo $value->catagory_name ?></td>
                                             <td>
-                                                <a href="<?php echo base_url() ?>editmainmenu?id=<?php echo $value->category_id ?>" class="btn btn-primary">Edit</a> <a href="" class="btn btn-denger">Delete</a>
+                                                <a href="<?php echo base_url() ?>editmainmenu?id=<?php echo $value->category_id ?>" class="btn btn-primary">Edit</a>
+
+                                                 <a href="<?php echo base_url() ?>Cmainmenu/deletemainmenu?id=<?php echo $value->category_id ?>" class="btn btn-denger">Delete</a>
 
                                                
                                             </td>

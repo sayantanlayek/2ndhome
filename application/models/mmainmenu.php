@@ -42,4 +42,11 @@ class Mmainmenu extends CI_Model {
 
 	}
 
+    function deletemainmenubyid($id){
+
+        $this->db->delete('tbl_catagory',array('category_id' => $id));
+        return true;
+
+    }
+
 }

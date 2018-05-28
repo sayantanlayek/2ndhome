@@ -74,6 +74,14 @@ class Ctables extends CI_Controller {
              redirect(base_url() . 'foodtablelist');
          }
     }
+    function deletetable(){
+        $tab_id=$_GET['id'];
+        $result = $this->mtables->deletetablebyid($tab_id);
+        if($result){
+             $this->session->set_flashdata('TableStatus', 'You have been successfully deleted table information');
+             redirect(base_url() . 'foodtablelist');
+         }
+    }
 
     
 }

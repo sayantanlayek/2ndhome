@@ -74,5 +74,14 @@ class Cmainmenu extends CI_Controller {
              redirect(base_url() . 'foodmainmenu');
          }
     }
+
+    function deletemainmenu(){
+        $cat_id=$_GET['id'];
+        $result = $this->mmainmenu->deletemainmenubyid($cat_id);
+        if($result){
+             $this->session->set_flashdata('MainmenuStatus', 'You have been successfully deleted A main menu');
+             redirect(base_url() . 'foodmainmenu');
+         }
+    }
     
 }

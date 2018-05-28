@@ -69,6 +69,14 @@ class Csubmenu extends CI_Controller {
              $this->session->set_flashdata('MainmenuStatus', 'You have been successfully updated A sub menu');
              redirect(base_url() . 'foodsubmenu');
          }
+     }
+         function deletesubmenu(){
+        $sub_cat_id=$_GET['id'];
+        $result = $this->msubmenu->deletesubmenubyid($sub_cat_id);
+        if($result){
+             $this->session->set_flashdata('MainmenuStatus', 'You have been successfully delete A sub menu');
+             redirect(base_url() . 'foodsubmenu');
+         }
     }
 
 

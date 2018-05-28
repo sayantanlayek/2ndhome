@@ -24,5 +24,16 @@ function index (){
 	//echo "<pre>";print_r($data);die();
 }
 
+function aboutus(){
+     $this->load->view('secondhomefront/votherheader');
+        $this->load->view('secondhomefront/vsecondhomeaboutus');
+        $this->load->view('secondhomefront/vhomefooter');
+}
+function contactus(){
+    $this->load->view('secondhomefront/votherheader');
+        $this->load->view('secondhomefront/vsecondhomecontactus');
+        $this->load->view('secondhomefront/vhomefooter');
+}
+
 
 }

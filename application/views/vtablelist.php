@@ -40,7 +40,8 @@ a.pull-right.btn.btn-denger.myaddbtn {
                                             <td><?php echo $value->table_name; ?></td>
                                             <td><?php echo $value->table_status; ?></td>
                                             <td>
-                                                <a href="<?php echo base_url() ?>edittable?id=<?php echo $value->table_id ?>" class="btn btn-primary">Edit</a> <a href="" class="btn btn-denger">Delete</a>
+                                                <a href="<?php echo base_url() ?>edittable?id=<?php echo $value->table_id ?>" class="btn btn-primary">Edit</a>
+                                                 <a href="<?php echo base_url() ?>Ctables/deletetable?id=<?php echo $value->table_id ?>" class="btn btn-denger">Delete</a>
 
                                                
                                             </td>

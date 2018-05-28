@@ -42,4 +42,10 @@ class Msubmenu extends CI_Model {
 		return true;
 
 	}
+    function deletesubmenubyid($id){
+
+        $this->db->delete('tbl_sub_catagory', array('sub_category_id' => $id));
+        return true;
+
+    }
 }

@@ -46,16 +46,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="<?php echo base_url() ?>">Home</a>
 						</li>
 						<li>
-							<a href="about.html">About</a>
+							<a href="<?php echo base_url() ?>aboutus">About</a>
 						</li>
 						<li>
 							<a href="<?php echo base_url() ?>menu">Menu</a>
 						</li>
 						<li>
-							<a href="services.html">Services</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
+							<a href="<?php echo base_url() ?>contactus">Contact</a>
 						</li>
 						<div class="clear"></div>
 					</ul>

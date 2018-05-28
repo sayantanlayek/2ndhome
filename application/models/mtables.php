@@ -48,4 +48,9 @@ class Mtables extends CI_Model {
 
 	}
 
+    function deletetablebyid($id){
+        $this->db->delete('tbl_table', array('table_id' => $id));
+        return true;
+    }
+
 }
